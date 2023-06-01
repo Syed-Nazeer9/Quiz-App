@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("./images/Background\ Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    
+}
+.formWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.startButton {
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    display: none;
+}
+.backButton {
+    position: absolute;
+    top:0;
+    left:550px;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    display: none;
+}
+.quizWrapper {
+    width: 50%;
+    margin: 120px auto;
+    padding: 20px;
+    border: 1px solid rgb(8, 7, 7);
+    display: none;
+    border-radius: 50px;
+    background-image: url(./images/image.webp);
+}
+
+.quizHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quizHeader div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizheader p {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.quizBody {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.quizBody li {
+    list-style:circle;
+    margin: 18px 0;
+    cursor: pointer;
+    padding-left: 3px;
+
+}
+
+.quizfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nextButton{
+    margin-top: 5px;
+}
+.correctAnswer{
+    background-color: green;
+}
+.wrongAnswer{
+    background-color: red;
+}
+.disableLi{
+    pointer-events: none;
+}
+.resultWrapper {
+    display: none;
+    text-align: center;
+    margin: 200px auto;
+    color: aliceblue;
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+    body{
+        background-image: url(./images/back\ 2.avif);
+        /* overflow-x: hidden; */
+        width: 100%;
+        height: 100vh;
+    }
+
+    .startButton{
+        position: absolute;
+        right:400px;
+    }
+    .backButton{
+        position: absolute;
+        left: 300px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .startButton{
+        position: absolute;
+        right:400px;
+        overflow-x: hidden;
+
+        
+    }
+    .backButton{
+        position: absolute;
+        right: -50px;
+        overflow-x: hidden;
+
+    }
+  }
+  
